@@ -225,7 +225,7 @@ function init(){
 		editDiv += '<div class="prioritise_existing_edit">'
 		editDiv += '<span data-icon="&#xe000" onClick="editTask('+i+')"></span>';
 		editDiv += '<span data-icon="&#xe001" onClick="removeTask('+i+');"></span>';
-		//editDiv += '<img src="Images/settings.png">';
+		//editDiv += '<img src="images/settings.png">';
 		editDiv += '<span data-icon="&#xe002" onClick="completeTask('+i+')"></span>';
 		editDiv += '</div>';
 		
@@ -268,8 +268,8 @@ function initFixed(){
 		i = hmwkSorting[a].split("_")[1];
 		
 		editDiv += '<div class="prioritise_existing_edit">'
-		editDiv += '<img onClick="editFixedTask('+i+')" src="Images/wrench.png">';
-		editDiv += '<img onClick="removeFixedTask('+i+')"src="Images/bin.png">';
+		editDiv += '<img onClick="editFixedTask('+i+')" src="images/wrench.png">';
+		editDiv += '<img onClick="removeFixedTask('+i+')"src="images/bin.png">';
 		editDiv += '</div>';
 		
 		document.getElementById("prioritise_existing_fixed_time").innerHTML += hmwkDueSort[a]+"<br />";
@@ -390,7 +390,7 @@ function sortFixedByTime(){
 /*
 function hmwkAdd(){
 	for(a=0;a<nHwmk;a++){
-		document.getElementById("hmwkAdd").innerHTML+='<div id="hmwk'+a+'" class="hmwkBlock"><span class="hmwkDue">'+hmwkDue[a]+'</span><span class="hmwkName">'+hmwkName[a]+'</span><span class="hmwkEdit"><img src="Images/arrow.png" id="arrow'+a+'" height="34" width="20" onClick="hmwkEdit('+a+')" onMouseOut="changeBackArrow(this.id)" onMouseOver="changeArrow(this.id)"></span><div class="hmwkExEditMenu" id="hmExEdit'+a+'" style="display:none;">'+"[ADD ICONS HERE]"+'</div></div>';
+		document.getElementById("hmwkAdd").innerHTML+='<div id="hmwk'+a+'" class="hmwkBlock"><span class="hmwkDue">'+hmwkDue[a]+'</span><span class="hmwkName">'+hmwkName[a]+'</span><span class="hmwkEdit"><img src="images/arrow.png" id="arrow'+a+'" height="34" width="20" onClick="hmwkEdit('+a+')" onMouseOut="changeBackArrow(this.id)" onMouseOver="changeArrow(this.id)"></span><div class="hmwkExEditMenu" id="hmExEdit'+a+'" style="display:none;">'+"[ADD ICONS HERE]"+'</div></div>';
 	}	
 }*/
 
@@ -498,7 +498,7 @@ function initRev(){
 			editDiv += '<div class="prioritise_existing_edit">'
 			editDiv += '<span data-icon="&#xe000" onClick="editRev('+a+','+b+')"></span>';
 			editDiv += '<span data-icon="&#xe001" onClick="removeRev('+a+','+b+')"></span>';
-			//editDiv += '<img src="Images/settings.png">';
+			//editDiv += '<img src="images/settings.png">';
 			editDiv += '<span data-icon="&#xe002" onClick="completeRev('+a+','+b+')"></span>';
 			editDiv += '</div>';
 							
@@ -679,13 +679,13 @@ function revNew(){
 		}
 		document.getElementById("revNewMenu").className += " appear";
 		//document.getElementById("revNewMenu").style.display = "block";
-		//document.getElementById("revPlusIcon").src = "Images/minus.png";
+		//document.getElementById("revPlusIcon").src = "images/minus.png";
 	   	document.getElementById("prioritise_add_btn_txt").innerHTML = "Cancel";
 	}
 	else{
 		document.getElementById("revNewMenu").className = document.getElementById("revNewMenu").className.replace(" appear","");
 		//document.getElementById("revNewMenu").style.display = "none";
-		//document.getElementById("revPlusIcon").src = "Images/plus.png";
+		//document.getElementById("revPlusIcon").src = "images/plus.png";
     	document.getElementById("prioritise_add_btn_txt").innerHTML = "Add Task";
 	}	 
 }
@@ -701,7 +701,7 @@ function revEditNew(){
 		document.getElementById("revEditMenu").className = document.getElementById("revEditMenu").className.replace(" appear","");
 	}//	*/
 	
-	//document.getElementById("revPlusIcon").src = "Images/plus.png";
+	//document.getElementById("revPlusIcon").src = "images/plus.png";
   	document.getElementById("prioritise_add_btn_txt").innerHTML = "Add Task";
 }
 
@@ -938,10 +938,10 @@ function initEvent(){
 		
 		/*
 		editDiv += '<div class="prioritise_existing_edit">'
-		editDiv += '<img onClick="editTask('+i+')" src="Images/wrench.png">';
-		editDiv += '<img onClick="removeTask('+i+')"src="Images/bin.png">';
-		//editDiv += '<img src="Images/settings.png">';
-		editDiv += '<img src="Images/done.png" onClick="completeTask('+i+')">';
+		editDiv += '<img onClick="editTask('+i+')" src="images/wrench.png">';
+		editDiv += '<img onClick="removeTask('+i+')"src="images/bin.png">';
+		//editDiv += '<img src="images/settings.png">';
+		editDiv += '<img src="images/done.png" onClick="completeTask('+i+')">';
 		editDiv += '</div>';
 		//*/
 		
@@ -1019,13 +1019,13 @@ function eventNew(){
 		
 		document.getElementById("eventNewMenu").className += " appear";
 		//document.getElementById("hmwkNewMenu").style.display = "block";
-		//document.getElementById("hmwkPlusIcon").src = "Images/minus.png";
+		//document.getElementById("hmwkPlusIcon").src = "images/minus.png";
 	   	document.getElementById("addEventBtn").innerHTML = "Cancel";
 	}
 	else{
 		document.getElementById("eventNewMenu").className = document.getElementById("eventNewMenu").className.replace(" appear","");
 		//document.getElementById("hmwkNewMenu").style.display = "none";
-	//	document.getElementById("hmwkPlusIcon").src = "Images/plus.png";
+	//	document.getElementById("hmwkPlusIcon").src = "images/plus.png";
     	document.getElementById("addEventBtn").innerHTML = "Add Event";
 	}	 
 }
@@ -1042,13 +1042,13 @@ function hmwkNew(){
 		
 		document.getElementById("hmwkNewMenu").className += " appear";
 		//document.getElementById("hmwkNewMenu").style.display = "block";
-	//	document.getElementById("hmwkPlusIcon").src = "Images/minus.png";
+	//	document.getElementById("hmwkPlusIcon").src = "images/minus.png";
 	   	document.getElementById("prioritise_add_btn_txt").innerHTML = "Cancel";
 	}
 	else{
 		document.getElementById("hmwkNewMenu").className = document.getElementById("hmwkNewMenu").className.replace(" appear","");
 		//document.getElementById("hmwkNewMenu").style.display = "none";
-	//	document.getElementById("hmwkPlusIcon").src = "Images/plus.png";
+	//	document.getElementById("hmwkPlusIcon").src = "images/plus.png";
     	document.getElementById("prioritise_add_btn_txt").innerHTML = "Add Task";
 	}	 
 }
@@ -1068,7 +1068,7 @@ function hmwkEditNew(){
 		document.getElementById("hmwkEditMenu").className = document.getElementById("hmwkEditMenu").className.replace(" appear","");
 	}
 	
-	//document.getElementById("hmwkPlusIcon").src = "Images/plus.png";
+	//document.getElementById("hmwkPlusIcon").src = "images/plus.png";
   	document.getElementById("prioritise_add_btn_txt").innerHTML = "Add Task";
 }
 
@@ -1625,7 +1625,7 @@ function scheduleTimelineShow(){
 					editDiv += '<div class="schedule_edit">'
 					editDiv += '<span data-icon="&#xe000" onClick="editFixedTask('+id+',true)"></span>';
 					editDiv += '<span data-icon="&#xe001" onClick="removeFixedTask('+id+',true,true)"></span>';
-					//editDiv += '<img src="Images/settings.png">';
+					//editDiv += '<img src="images/settings.png">';
 					editDiv += '</div>';
 
 					topz = sessionBoxHt+(timeSessionIndex[Timetable[0][i]]-strtInd)*((boxHt+1)/intvl)+"px";
@@ -1664,7 +1664,7 @@ function scheduleTimelineShow(){
 					editDiv += '<div class="schedule_edit">'
 					editDiv += '<span data-icon="&#xe000" onClick="editFixedTask('+id+',true)"></span>';
 					editDiv += '<span data-icon="&#xe001" onClick="removeFixedTask('+id+',true,true)"></span>';
-					//editDiv += '<img src="Images/settings.png">';
+					//editDiv += '<img src="images/settings.png">';
 					editDiv += '</div>';
 					
 					topz = sessionBoxHt+(timeSessionIndex[Timetable[0][i]]-strtInd)*((boxHt+1)/intvl)+"px";
@@ -1710,7 +1710,7 @@ function scheduleTimelineShow(){
 					editDiv += '<div class="schedule_edit">'
 					editDiv += '<span data-icon="&#xe000" onClick="editRev('+j+','+iz+',true)"></span>';
 					editDiv += '<span data-icon="&#xe001" onClick="removeRev('+j+','+iz+',true,true)"></span>';
-					//editDiv += '<img src="Images/settings.png">';
+					//editDiv += '<img src="images/settings.png">';
 					editDiv += '<span data-icon="&#xe002" onClick="retrieveRevData();completeRev('+j+','+iz+',true,'+i+')"></span>';
 					editDiv += '</div>';
 										
@@ -1786,7 +1786,7 @@ function scheduleTimelineShow(){
 					//Edit Div
 					/*
 					editDiv+="<div class='timetable_editComplete' onclick='completeTask("+id+",true,"+j+","+i+");'>";
-					editDiv+="<img src='Images/doneBtn.png' />"
+					editDiv+="<img src='images/doneBtn.png' />"
 					editDiv+="</div>";
 					*/
 
@@ -1794,7 +1794,7 @@ function scheduleTimelineShow(){
 					editDiv += '<div class="schedule_edit">'
 					editDiv += '<span data-icon="&#xe000" onClick="editTask('+id+',true)"></span>';
 					editDiv += '<span data-icon="&#xe001" onClick="removeTask('+id+',true,true)"></span>';
-					//editDiv += '<img src="Images/settings.png">';
+					//editDiv += '<img src="images/settings.png">';
 					editDiv += '<span data-icon="&#xe002" onClick="completeTask('+id+',true,'+j+','+i+')"></span>';
 					editDiv += '</div>';
 
@@ -1988,13 +1988,13 @@ function fixedNew(){
 		document.getElementById("prioritise_add_fixed").className += " appear";
 		//document.getElementById("prioritise_add_fixed").style.display = "block";
 		//document.getElementById("prioritise_add_fixed_edit").style.display = "none";
-		//document.getElementById("fixedPlusIcon").src = "Images/minus.png";
+		//document.getElementById("fixedPlusIcon").src = "images/minus.png";
 	   	document.getElementById("prioritise_add_btn_txt").innerHTML = "Cancel";
 	}
 	else{
 		document.getElementById("prioritise_add_fixed").className = document.getElementById("prioritise_add_fixed").className.replace(" appear","");
 		//document.getElementById("prioritise_add_fixed").style.display = "none";
-		//document.getElementById("fixedPlusIcon").src = "Images/plus.png";
+		//document.getElementById("fixedPlusIcon").src = "images/plus.png";
     	document.getElementById("prioritise_add_btn_txt").innerHTML = "Add Task";
 	}
 }
@@ -2011,7 +2011,7 @@ function fixedEditNew(){
 			document.getElementsByClassName("appear")[i].className = document.getElementsByClassName("appear")[i].className.replace(" appear","");
 		}
 		document.getElementById("prioritise_add_fixed_edit").className = document.getElementById("prioritise_add_fixed_edit").className.replace(" appear","");
-		//document.getElementById("fixedPlusIcon").src = "Images/plus.png";
+		//document.getElementById("fixedPlusIcon").src = "images/plus.png";
 	}
     
 	document.getElementById("prioritise_add_btn_txt").innerHTML = "Add Task";
@@ -3212,11 +3212,11 @@ function userMenu(event){
 }
 
 function changeBackArrow(id){
-	document.getElementById(id).src = "Images/arrow.png";
+	document.getElementById(id).src = "images/arrow.png";
 }
 
 function changeArrow(id){
-	document.getElementById(id).src = "Images/arrow_over.png";
+	document.getElementById(id).src = "images/arrow_over.png";
 }
 
 function checkInt(event,id){

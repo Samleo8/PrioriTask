@@ -331,7 +331,7 @@ window.onmouseover = function(e){
 </head>
 <body>
 <div id="header" style="display:none;">
-	PrioriTask <img src="Images/logo.png" />
+	PrioriTask <img src="images/logo.png" />
     <div id="prioritask_user" class="menu_button" data-icon="&#xe003" onClick="userMenu(event);" onMouseOver="openUserMenu(event);"  onMouseOut="closeUserMenu(event);" style="display:none;" >
 		GUEST
         <div id="user_menu" style="display:none;" onMouseOver="openUserMenu(event);" onMouseOut="closeUserMenu(event);">
@@ -339,7 +339,7 @@ window.onmouseover = function(e){
             <a href="logout"><div id="user_logout">Logout</div></a>
         </div>            	
     </div>
-    <div id="schedule_time"><img src="Images/clock.png"><div id="schedule_time_time"></div></div>
+    <div id="schedule_time"><img src="images/clock.png"><div id="schedule_time_time"></div></div>
 </div>
 
 <div id="body_prioritask">
@@ -360,13 +360,13 @@ window.onmouseover = function(e){
         <div id="menu_add_reschedule" onClick="javascript:event.stopPropagation();">
 	        <div class="menu_button" onClick="reschedule();scheduleTimelineShow();" id="prioritise_add_btn_schedule">
                 Reschedule
-                <img src="Images/schedule.png" />
+                <img src="images/schedule.png" />
             </div>
         </div>
         <div id="menu_add_screenshot" onClick="javascript:event.stopPropagation();">	
             <div class="menu_button" onClick="takeTimetableScreenshot();" id="screenshot_btn">
                 Screenshot
-                <img src="Images/screenshot.png"/>
+                <img src="images/screenshot.png"/>
             </div>
 	    </div>
         
@@ -387,14 +387,14 @@ window.onmouseover = function(e){
     <div id="main_prioritask" class="disableSelect">
       <div id="schedule_header">
             <div id="header_timeline_day">
-            <div id="timelineLeftArrow" class="timelineBtn" onClick="changeView(-1);"><img src="Images/arrowLeft.png"></div>
+            <div id="timelineLeftArrow" class="timelineBtn" onClick="changeView(-1);"><img src="images/arrowLeft.png"></div>
             <div id="timelineDayDate">
                 <div id="timelineDay"></div>
                 <div id="timelineDate"></div>
             </div>
-            <div id="timelineRightArrow" class="timelineBtn" onClick="changeView(1);"><img src="Images/arrowRight.png"></div>
+            <div id="timelineRightArrow" class="timelineBtn" onClick="changeView(1);"><img src="images/arrowRight.png"></div>
             <div id="timelineChangeView" class="timelineBtn" title="Change View" onClick="changeViewMenu(event);" onMouseOver="openViewMenu(event);" onMouseOut="closeViewMenu(event);">
-            	<!--<img src="Images/changeView.png">-->
+            	<!--<img src="images/changeView.png">-->
             </div>
 	        <ul id="timelineChangeViewMenu" style="display:none;" onClick="changeViewMenu(event);" onMouseOver="openViewMenu(event);" onMouseOut="closeViewMenu(event);">
               <li id="timelineView1" class="timelineCurrView" onclick="changeView(0,1);">Weekly</li>
